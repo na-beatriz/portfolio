@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b66c67508e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfólio</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <i class="fa-brands fa-github-alt"></i>
+                <a target="_blank" href="https://github.com/na-beatriz">Github</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <a target="_blank" href="https://www.linkedin.com/in/ana-beatriz-almeida-543a5a16b">LinkedIn</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a target="_blank" href="mailto:anabealmeidas@gmail.com">E-mail</a>
+            </li>
+            <li>
+                <i class="fa-brands fa-whatsapp"></i>
+                <a target="_blank" href="https://wa.me/11945728621">WhatsApp</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Ana Beatriz Almeida</h1>
+                <h5> Estudante de Desenvolvimento</h5>
+            </div>
+
+            <div onclick="displayabout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div style="display: none;" id="about">
+                <p>
+                    Hello World, <br>
+
+                    Sou a Ana, estou na jornada de aprendizagem sobre HTML, CSS e JavaScript.
+                    Atualmente aluna do <b>Minas Programam</b> e particpante da jornada <b>Hiring Coders</b>!
+                    Ah, esse é o resultado do primeiro desafio da jornada!
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe Seu Contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Ana Beatriz Almeida</p>
+    </footer>
+
+    <script>
+        function displayabout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

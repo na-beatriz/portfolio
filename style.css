@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #8A8635;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 45px ;
+}
+
+.foto {
+    width: 60px;
+    height: 60px;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+}
+
+header ul li a {
+    transition: 300ms;
+}
+
+header ul li a:hover {
+    color: #362706;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 56px;
+}
+
+.container .name h5 {
+    font-size: 22px;
+    color: #362706;
+}
+
+#arrow {
+    font-size: 36px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+       visibility: hidden; 
+    }
+}
+
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    color: #AE431E;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    background: #E9E5D6;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #362706;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px ;
+    margin-left: -10px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #E9E5D6;
+    background: #362706;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+    }
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #362706;
+    color: #E9E5D6;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
