@@ -1,3 +1,3 @@
 # Portfolio
 
-Desenvolvindo no Hiring Codes #3
+Criado no Hiring Coders com base nas aulas da Kai Pimenta #3
